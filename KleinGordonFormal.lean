@@ -1,3 +1,3 @@
-import KleinGordonFormal.Core.KleinGordon006MasslessCorollary
+import KleinGordonFormal.Core.KleinGordon007Certificate
 
-/-! Public entry point for KLEINGORDON-001 through KLEINGORDON-006. -/
+/-! Public entry point for KLEINGORDON-001 through KLEINGORDON-007. -/

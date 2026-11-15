@@ -1,12 +1,12 @@
 # LeanKleinGordonDerivation
 
-A staged Lean derivation of the free Klein–Gordon equation from the Lattice Field Medium (LFM) c40 action and centered update. Stage 5 proves the following equation for finite sums of the normalized continuum modes of the selected small-wave branch.
+A seven-stage Lean derivation of the free Klein–Gordon equation from the Lattice Field Medium (LFM) c40 action and centered update. The final certificate proves the following equation for finite sums of the normalized continuum modes of the selected small-wave branch.
 
 ```text
 (∂ₜ² − 12∇² + 361)φ = 0
 ```
 
-The public release contains the first six stages.
+The public release contains all seven stages.
 
 - [Stage 1](docs/STAGE_001.md) checks the locked action, its site variations, and the stationary background with `Ψ = 0` and `χ = (19, 0, 0)`.
 - [Stage 2](docs/STAGE_002.md) derives the first-order lattice response on a selected Ψ polarization. Lean checks the onsite gap, C19 transport, and vanishing first-order χ acceleration on this branch.
@@ -14,6 +14,7 @@ The public release contains the first six stages.
 - [Stage 4](docs/STAGE_004.md) derives the isotropic C19 coefficient and proves that the normalized long-wavelength squared-frequency readout tends to `361 + 12|k|²`. The stage documents the normalization and bounds the lattice and timestep errors.
 - [Stage 5](docs/STAGE_005.md) converts that dispersion into the three-dimensional Klein–Gordon equation by taking actual derivatives of the limiting finite wave sums.
 - [Stage 6](docs/STAGE_006.md) verifies the formal zero-mass wave equation and checks separately that zero background χ removes transport on the selected lattice tangent.
+- [Stage 7](docs/STAGE_007.md) checks the complete chain in one certificate, including the exact lattice modes, the error bounds, and the final differential equation.
 
 ## Build and verify
 
@@ -27,10 +28,11 @@ lake env lean scripts/AuditStage003.lean
 lake env lean scripts/AuditStage004.lean
 lake env lean scripts/AuditStage005.lean
 lake env lean scripts/AuditStage006.lean
+lake env lean scripts/AuditStage007.lean
 ```
 
 The PowerShell verifier also scans the promoted source and checks the audit's reported axiom dependencies.
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File scripts/verify_stage6.ps1
+powershell -ExecutionPolicy Bypass -File scripts/verify_stage7.ps1
 ```
