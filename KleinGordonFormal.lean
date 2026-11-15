@@ -1,3 +1,3 @@
-import KleinGordonFormal.Core.KleinGordon005Operator
+import KleinGordonFormal.Core.KleinGordon006MasslessCorollary
 
-/-! Public entry point for KLEINGORDON-001 through KLEINGORDON-005. -/
+/-! Public entry point for KLEINGORDON-001 through KLEINGORDON-006. -/
