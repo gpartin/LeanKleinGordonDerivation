@@ -61,7 +61,7 @@
    "inputRev": "master",
    "inherited": true,
    "configFile": "lakefile.toml"},
-  {"url": "https://github.com/leanprover/quote4",
+  {"url": "https://github.com/leanprover-community/quote4",
    "type": "git",
    "subDir": null,
    "scope": "leanprover-community",
