@@ -1,0 +1,26 @@
+{
+  "title": "Lean Klein-Gordon Derivation",
+  "description": "Lean 4 formalization of a seven-stage, scoped Klein-Gordon continuum readout from the LFM c40 two-field C19 action and centered update. The release derives the selected linearized lattice mode, its exact discrete dispersion, the isotropic C19 coefficient, explicit spatial and temporal error bounds, and a normalized long-wave spectral readout whose finite continuum mode sums solve (partial_t^2 - 12 Laplacian + 361) phi = 0. The normalization subtracts the onsite rest contribution, rescales the long-wave frequency shift by the squared lattice spacing, and restores the rest contribution. The release does not prove convergence of arbitrary nonlinear native trajectories, a native propagating massless branch, a physical particle, or that LFM models nature.",
+  "creators": [
+    {
+      "name": "Partin, G. D."
+    }
+  ],
+  "license": "cc0-1.0",
+  "upload_type": "software",
+  "keywords": [
+    "Lean 4",
+    "formalization",
+    "Klein-Gordon equation",
+    "lattice field theory",
+    "continuum limit",
+    "C19 stencil"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/gpartin/LeanKleinGordonDerivation",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
