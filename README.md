@@ -55,3 +55,9 @@ Publication and preservation activity is recorded in the
 [external submission tracker](docs/SUBMISSION_TRACKER.md).
 Clean-checkout instructions are in the
 [reproducibility guide](docs/REPRODUCIBILITY.md).
+
+## License
+
+Project-authored content is available under [MIT](LICENSE) or
+[CC0-1.0](LICENSE-CC0), at the recipient's option. See
+[LICENSING.md](LICENSING.md) for scope and third-party terms.
